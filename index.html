@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Frontend test</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="scss/app.css">
+    <link rel="stylesheet" href="scss/app_screen.css">
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <nav id="top-menu">
+            <ul>
+                <li><a href="#personal-info">Личная информация</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#about">О себе</a></li>
+            </ul>
+        </nav>
+        <div id="menu-activator"><span class="menu-icon"></span></div>
+    </div>
+</header>
+<div id="page-content">
+    <div class="main-bg">
+        <img src="img/background.jpg" alt="">
+    </div>
+    <div class="container">
+        <h1>Анкета</h1>
+        <form action="#" id="total-form">
+
+            <section id="personal-info">
+                <h2>Личная информация</h2>
+                <div class="form-line">
+                    <input class="style-input" type="text" name="personal_fio" value="" placeholder="Чудовская В. Н."
+                           data-placeholder="ФИО" data-info="Чудовская В. Н.">
+                </div>
+                <div class="form-line">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1988</option>
+                        <option>1987</option>
+                        <option>1986</option>
+                        <option>Другие</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <input class="style-input" type="text" name="personal_place" value="" placeholder="Бровары"
+                           data-placeholder="Место проживания" data-info="Бровары">
+                </div>
+                <div class="form-line">
+                    <input class="style-input" type="text" name="personal_skype" value="" placeholder="x_chudo"
+                           data-placeholder="Skype" data-info="x_chudo">
+                </div>
+                <div class="form-line">
+                    <input class="style-input" type="email" name="personal_email" value=""
+                           placeholder="vchudovskaya@gmail.com" data-placeholder="E-mail"
+                           data-info="vchudovskaya@gmail.com">
+                </div>
+
+
+            </section><!--/End personal-info-->
+
+            <section id="experience">
+                <h2>Расскажите о своем опыте</h2>
+                <div class="grid-row">
+                    <div class="grid-column">
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="bem" checked>
+                                БЭМ/OOCSS
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="stylus" checked>
+                                Stylus/LESS/SASS
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="svg" checked>
+                                Работаю с SVG
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid-column">
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="semantic" checked>
+                                Верстаю семантично
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="js">
+                                ES2015/ES2016
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="collector">
+                                Gulp/GRUNT
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid-column">
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="webpack">
+                                Webpack
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="jquery" checked>
+                                jQuery
+                            </label>
+                        </div>
+                        <div class="form-line">
+                            <label>
+                                <input name="exp_check" type="checkbox" value="git" checked>
+                                Ипользую Git
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </section><!--/End experience-->
+
+            <section id="javascript">
+                <h2>Уровень владения JavaScript</h2>
+                <div id="level-slider-wrap">
+                    <div id="level-js"></div>
+                </div>
+            </section><!--/End javascript-->
+
+            <section id="about">
+                <h2>Расскажите о себе</h2>
+                <div class="about-text">
+                    Напишите несколько предложений, чем привлекла наша вакансия<br />
+                    и что вы ожидаете от работы у нас.
+                </div>
+                <div class="form-line">
+                    <textarea class="style-input" placeholder="Юху! :)"
+                           data-placeholder="Ваши впечатления..." data-info="Юху! :)"></textarea>
+                </div>
+                <button type="submit" class="btn">
+                    Готово
+                </button>
+            </section><!--/End about-->
+
+        </form>
+    </div><!--/End .container-->
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-slider-pips.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
